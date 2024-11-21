@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lr | 12</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="difficulty">
+        <div class="choise-block">
+            <h1>Select level:</h1>
+
+            <div class="choise">
+                <input type="radio" name="lvl" value="A1-A2">
+                <label for="lvl">A1-A2</label>
+            </div>
+
+            <div class="choise">
+                <input type="radio" name="lvl" value="B1-B2">
+                <label for="lvl">B1-B2</label>
+            </div>
+
+            <div class="choise">
+                <input type="radio" name="lvl" value="C1">
+                <label for="lvl">C1</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="card-block">
+            <a href="#" class="back"></a>
+            <div class="card">Choose level</div>
+            <a href="#" class="next"></a>
+        </div>
+        <button class="select">Select level</button>
+        <h2 class="counter">0 / 10</h2>
+
+        <input type="text" class="translation" placeholder="Type the translation...">
+        
+
+        <div class="check">
+            <div class="check-block"><img src="img/correct.png" alt="correct"><p class="correct">0</p></div>
+            <div class="check-block"><img src="img/incorrect.png" alt="incorrect"><p class="incorrect">0</p></div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="results">
+            <h1>Test is completed!</h1>
+            <p id="res"></p>
+            
+            <button class="try-again">Try again</button>
+        </div>
+    </div>    
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
